@@ -1,0 +1,9 @@
+.my-color {
+    color: var(--bs-white);
+    background-color: var(--bs-pink);
+}
+
+
+h1 {
+    color: var(--bs-blue);
+}

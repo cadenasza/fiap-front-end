@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Play", sans-serif;
+}
+
+:root {
+    --color-1:#fff ;
+    --color-2:#060b33 ;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+header h1 {
+    font-size: 6vmin;
+    margin-bottom: 0;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu a {
+    color: var(--color-2);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.banner {
+    background: url(./img/pexels-bella-white-201200-635279.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-1);
+    text-align: center;
+}
+
+.banner h2 {
+    margin: 20px 0;
+    font-size: 3rem;
+}
+
+.banner p {
+    font-size: 2rem;
+}
+
+.banner .btn {
+    margin-top: 20px;
+    background-color: var(--color-2);
+    border: 1px solid var(--color-2);
+    border-radius: 4px;
+    color: var(--color-1);
+    padding: 20px 50px;
+    text-align: center;
+    font-weight: 700;
+    transition: .5s;
+    font-size: 1.5rem;
+}
+
+.banner .btn:hover {
+    background-color: transparent;
+    color: var(--color-2);
+}
+
+.informacoes {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.informacoes h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+.informacoes p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.informacoes hr {
+    width: 200px;
+    height: 2px;
+    background-color: var(--color-1);
+    margin-bottom: 70px;
+    border: none;
+}
+
+.informacoes .item {
+    display: flex;
+    width: 100%;
+}
+
+.informacoes .item li {
+    padding:0 30px;
+    text-align: center;
+}
+
+.informacoes .item li i {
+    color: var(--color-1);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.informacoes .item li h4 {
+    color: var(--color-1);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.informacoes .item li p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.cadastro h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+.cadastro p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.cadastro form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.cadastro form input {
+    padding: 15px;
+    border: 1px solid var(--color-2);
+    border-radius: 15px;
+    margin-right: 15px;
+    width: 300px;
+}
+
+.cadastro form button {
+    padding: 15px;
+    background: var(--color-2);
+    color: var(--color-1);
+    text-transform:uppercase;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color-2);
+    padding: 50px 0;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul li a {
+    color: var(--color-1);
+    text-align: center;
+}
+
+footer p {
+    color: var(--color-1);
+    text-align: center;
+}
+
+footer ul li a i {
+    font-size: 1.5rem;
+}
+
+@media (max-width:850px) {
+    .informacoes .item {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:750px) {
+    header {
+        flex-direction: column;
+    }
+
+    .banner {
+        margin-top: 50px;
+    }
+
+    .banner h1 {
+        font-size: 2.3rem;
+    }
+    .banner h3 {
+        font-size: 1.3rem;
+    }
+    .cadastro input {
+        margin-bottom: 15px;
+    }
+}
