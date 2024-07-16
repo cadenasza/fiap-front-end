@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./projeto.css">
+</head>
+<body>
+    
+  <header class="container mt-3">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand logo-text" href="#"><i class="fa-solid fa-table-cells logo-icon"></i>Projeto web</a>
+        <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-align-right"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#valores">Valores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#solucoes">Solucoes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#equipe">Equipe</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cases
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#caseModal1">Case 1</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#caseModal1">Case 2</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#caseModal1">Case 3</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container mt-5 sobre" id="sobre">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-lg-6">
+        <h2 class="my-title display-5 my-4">Solucoes modernas para o crescimento da sua empresa</h2>
+        <h3 class="mb-4">Somos uma equipe de desenvolvedores talentosos criando projetos inovadores</h3>
+        <a href="#" class="btn btn-primary btn-lg">Mais informacoes <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="./img/people-collaborating-online.png" alt="ilustracao imagem sobre a empresa" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5" id="valores">
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="col-lg-6 bg-blue-2 m-0 pe-0">
+        <h4 class="my-1 my-title mt-4">Valores</h4>
+        <h4 class="my-title my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque delectus id cupiditate quos non. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, nesciunt?</h4>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptate aut corporis cumque dicta reiciendis quas ea, voluptatibus ipsam architecto alias atque minima non eum voluptas voluptatum cupiditate sequi. Nulla quo modi illum rerum sint ipsum. Eveniet soluta ad fuga, aspernatur quibusdam sunt iste enim consectetur! Quas non debitis eos.</p>
+        <a href="#" class="btn btn-primary btn-lg text-light mb-5">Conheca agora <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </div>
+
+      <div class="col-lg-6 text-center m-0 p-0">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/pexels-alexander-suhorucov-6457572.jpg" class="d-block w-100" alt="Pessoas reunidas no trabalho">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/pexels-fauxels-3184296.jpg" class="d-block w-100" alt="Pessoas reunidas no trabalho">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/pexels-gabby-k-6238186.jpg" class="d-block w-100" alt="Pessoas reunidas no trabalho">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5" id="solucoes">
+    <h4 class="my-title text-center my-mt">Solucoes</h4>
+    <h3 class="text-center my-title mb-4">Veja o que podemos fazer por sua empresa</h3>
+  
+    <div class="row d-flex align-items justify-content-center">
+      <div class="col-lg-4 my-2">
+        <div class="card text-center p-4">
+          <i class="fa-solid fa-shield-halved icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Lorem Ipsum</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga corrupti cum non, ab atque culpa, earum blanditiis ipsum assumenda, iste quas dolorum et. Ullam cupiditate provident doloribus omnis aspernatur?</p>
+            <a href="#" class="btn btn-primary">Mais informacoes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 my-2">
+        <div class="card text-center p-4">
+          <i class="fa-solid fa-code icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Lorem Ipsum</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga corrupti cum non, ab atque culpa, earum blanditiis ipsum assumenda, iste quas dolorum et. Ullam cupiditate provident doloribus omnis aspernatur?</p>
+            <a href="#" class="btn btn-primary">Mais informacoes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 my-2">
+        <div class="card text-center p-4">
+          <i class="fa-solid fa-database icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Lorem Ipsum</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga corrupti cum non, ab atque culpa, earum blanditiis ipsum assumenda, iste quas dolorum et. Ullam cupiditate provident doloribus omnis aspernatur?</p>
+            <a href="#" class="btn btn-primary">Mais informacoes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 my-2">
+        <div class="card text-center p-4">
+          <i class="fa-solid fa-coins icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Lorem Ipsum</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga corrupti cum non, ab atque culpa, earum blanditiis ipsum assumenda, iste quas dolorum et. Ullam cupiditate provident doloribus omnis aspernatur?</p>
+            <a href="#" class="btn btn-primary">Mais informacoes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 my-2">
+        <div class="card text-center p-4">
+          <i class="fa-solid fa-building-shield icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Lorem Ipsum</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga corrupti cum non, ab atque culpa, earum blanditiis ipsum assumenda, iste quas dolorum et. Ullam cupiditate provident doloribus omnis aspernatur?</p>
+            <a href="#" class="btn btn-primary">Mais informacoes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 my-2">
+        <div class="card text-center p-4">
+          <i class="fa-solid fa-diagram-project icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Lorem Ipsum</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga corrupti cum non, ab atque culpa, earum blanditiis ipsum assumenda, iste quas dolorum et. Ullam cupiditate provident doloribus omnis aspernatur?</p>
+            <a href="#" class="btn btn-primary">Mais informacoes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5" id="equipe">
+    <h4 class="my-title text-center my-mt">Equipe</h4>
+    <h3 class="text-center my-title mb-4">Essa é a nossa equipe</h3>
+
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="col-lg-3 my-2">
+        <div class="card text-center">
+          <img src="./img/pexels-justin-shaifer-501272-1222271.jpg" alt="foto do Pedro">
+          <div class="card-body">
+            <h4 class="my-title my-3">Pedro</h4>
+            <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus beatae reprehenderit distinctio eveniet, asperiores aspernatur.</p>
+            <div class="mt-5">
+              <a href=""><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+              <a href=""><i class="fa-brands fa-github icon-social mx-2"></i></a>
+              <a href=""><i class="fa-brands fa-twitter icon-social mx-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 my-2">
+        <div class="card text-center">
+          <img src="./img/pexels-olly-712513.jpg" alt="Foto da julia">
+          <div class="card-body">
+            <h4 class="my-title my-3">Julia</h4>
+            <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus beatae reprehenderit distinctio eveniet, asperiores aspernatur.</p>
+            <div class="mt-5">
+              <a href=""><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+              <a href=""><i class="fa-brands fa-github icon-social mx-2"></i></a>
+              <a href=""><i class="fa-brands fa-twitter icon-social mx-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 my-2">
+        <div class="card text-center">
+          <img src="./img/pexels-olly-733872.jpg" alt="imagem da Liza">
+          <div class="card-body">
+            <h4 class="my-title my-3">Liza</h4>
+            <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus beatae reprehenderit distinctio eveniet, asperiores aspernatur.</p>
+            <div class="mt-5">
+              <a href=""><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+              <a href=""><i class="fa-brands fa-github icon-social mx-2"></i></a>
+              <a href=""><i class="fa-brands fa-twitter icon-social mx-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 my-2">
+        <div class="card text-center">
+          <img src="./img/pexels-stefanstefancik-91227.jpg" alt="imagem do ricardo">
+          <div class="card-body">
+            <h4 class="my-title my-3">Ricardo</h4>
+            <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus beatae reprehenderit distinctio eveniet, asperiores aspernatur.</p>
+            <div class="mt-5">
+              <a href=""><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+              <a href=""><i class="fa-brands fa-github icon-social mx-2"></i></a>
+              <a href=""><i class="fa-brands fa-twitter icon-social mx-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="modal fade" id="caseModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Empresa ABC</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="mb-3">Descricao do projeto</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis aut, necessitatibus at ipsam iure velit, minus voluptas nesciunt odit, doloribus laboriosam aspernatur nemo tempore assumenda molestiae? Deserunt deleniti fuga consectetur esse corporis non, dolore inventore nisi qui odit asperiores id. Perferendis fuga ab veritatis enim illum vitae architecto exercitationem reiciendis ullam laudantium maiores sed quibusdam non placeat, dolore harum sunt dolores facere, voluptate necessitatibus. Voluptatum a perferendis quae alias adipisci minima corrupti fugiat sapiente nisi ab. Eum dolores assumenda officia molestiae tenetur dolorum, ab at temporibus laudantium consequuntur? Recusandae totam ipsum ipsam assumenda architecto numquam placeat magnam deleniti aliquid aliquam corporis nulla quibusdam quod nesciunt, est eos accusantium, amet impedit! Sint dicta ad ex. Iusto labore corrupti nobis nihil?</p>
+
+          <h2>Solucoes desenvolvidas</h2>
+          <div class="row my-4">
+            <div class="col-3">
+              <img src="./img/pexels-fotios-photos-1092671.jpg" alt="imagem do projeto 1" class="img-fluid rounded-1">
+            </div>
+
+            <div class="col-3">
+              <img src="./img/pexels-dvaughnbell-2068664.jpg" alt="imagem do projeto 2" class="img-fluid rounded-1">
+            </div>
+
+            <div class="col-3">
+              <img src="./img/pexels-pixabay-33488.jpg" alt="imagem do projeto 3" class="img-fluid rounded-1">
+            </div>
+
+            <div class="col-3">
+              <img src="./img/pexels-wdnet-242492.jpg" alt="imagem do projeto 4" class="img-fluid rounded-1">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container-fluid bg-blue-2 mt-5" id="contato">
+    <div class="container py-5"></div>
+      <h4 class="my-title text-center">Contato</h4>
+      <h3 class="text-center my-title mb-4">Veja como voce pode falar conosco</h3>
+
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-6 my-4 text-center">
+              <p>
+                <i class="fa-solid fa-location-dot icon-contato"></i>
+              </p>
+              <h3>Endereco</h3>
+              <p>
+                Av. Lins de vasconcelos, 1222 <br>
+                Sao Paulo - SP
+              </p>
+            </div>
+
+            <div class="col-lg-6 my-4 text-center">
+              <p>
+                <i class="fa-solid fa-phone icon-contato"></i>
+              </p>
+              <h3>Telefone</h3>
+              <p>(11) 3383-8810 <br>
+                 (11) 94343-2901
+              </p>
+            </div>
+
+            <div class="col-lg-6 my-4 text-center">
+              <p>
+                <i class="fa-solid fa-envelope icon-contato"></i>
+              </p>
+              <h3>Email</h3>
+              <p>
+                helpcenter@fiap.com <br>
+              </p>
+            </div>
+
+            <div class="col-lg-6 my-4 text-center">
+              <p>
+                <i class="fa-solid fa-clock icon-contato"></i>
+              </p>
+              <h3>Atendimento</h3>
+              <p>
+                Segunda - Sexta <br>
+                08:00 - 21:00
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <form action="#" class="row text-start">
+            <div class="col-lg-6 my-3">
+              <label for="nome" class="form-label">Seu nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            </div>
+
+            <div class="col-lg-6 my-2">
+              <label for="email" class="form-label">Seu email</label>
+              <input type="email" class="form-control" id="email" placeholder="Seu email">
+            </div>
+
+            <div class="col-lg-6 my-2">
+              <label for="telefone" class="form-label">Seu telefone</label>
+              <input type="tel" class="form-control" id="telefone" placeholder="Seu telefone">
+            </div>
+
+            <div class="col-lg-6 my-2">
+              <label for="assunto" class="form-label">Assunto</label>
+              <input type="text" class="form-control" id="assunto" placeholder="Assunto">
+            </div>
+
+            <div class="col-lg-12 my-2">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" class="form-control"></textarea>
+            </div>
+
+            <div class="col-lg-12 my-2 d-flex      justify-content-end">
+              <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </section>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous">
+    </script>
+</body>
+</html>
