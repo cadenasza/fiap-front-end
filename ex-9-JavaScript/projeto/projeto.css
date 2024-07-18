@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 2em;
+    font-weight: 400;
+    border-bottom: 1px solid #000;
+}
+
+h2 {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: red;
+}
+
