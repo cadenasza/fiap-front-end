@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+}
+
+p {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: blue;
+}
